@@ -11,6 +11,6 @@ export class GetPlayerByIdUseCaseClient implements GetPlayerByIdUseCase {
     constructor(private _player: PlayerRepo) { }
     
    getPlayerById(id: string): Observable<PlayerEntity | null> {
-        return this._player.getById(id);
+        return this._player.getPlayerById(id);
    }
 }

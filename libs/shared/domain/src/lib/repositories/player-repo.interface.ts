@@ -5,17 +5,17 @@ import { PlayerStatsEntity } from '../entities/player-stats-entity.interface';
 import { MatchHistoryItemEntity } from '../entities/match-history-item-entity.interface';
 
 export interface PlayerRepo {
-    getAll(): Observable<PlayerEntity[]>;
+    getAllPlayers(): Observable<PlayerEntity[]>;
     
-    getById(id: string): Observable<PlayerEntity | null>;
+    getPlayerById(id: string): Observable<PlayerEntity | null>;
     
-    create(player: Omit<PlayerEntity, 'id'>): Observable<PlayerEntity>;
+    createPlayer(player: Omit<PlayerEntity, 'id'>): Observable<PlayerEntity>;
     
-    update(id: string, player: Partial<PlayerEntity>): Observable<PlayerEntity>;
+    updatePlayer(player: Partial<PlayerEntity>): Observable<PlayerEntity>;
     
-    delete(id: string): Observable<boolean>;
+    deletePlayer(id: string): Observable<boolean>;
     
-    search(query: string): Observable<PlayerEntity[]>;
+    searchPlayer(query: string): Observable<PlayerEntity[]>;
     
     updateRating(id: string, newRating: number): Observable<PlayerEntity>;
     
