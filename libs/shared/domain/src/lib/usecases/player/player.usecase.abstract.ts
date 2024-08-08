@@ -14,7 +14,7 @@ export abstract class GetPlayerByIdUseCase {
 }
 
 export abstract class CreatePlayerUseCase {
-    abstract createPlayer(username: string, initialRating?: number): Observable<PlayerEntity>;
+    abstract createPlayer(player: Omit<PlayerEntity, 'id'>): Observable<PlayerEntity>;
 }
 
 export abstract class UpdatePlayerUseCase {

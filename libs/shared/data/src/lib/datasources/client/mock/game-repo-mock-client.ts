@@ -12,7 +12,7 @@ export class GameRepoMockClient implements GameRepo {
     getGameById(id: string): Observable<GameEntity | null> {
         return of(null);
     }
-    createGame(game: GameEntity): Observable<GameEntity> {
+    createGame(whitePlayerId: string, blackPlayerId: string): Observable<GameEntity> {
         return of({} as GameEntity);
     }
     updateGameStatus(id: string, status: GameStatus): Observable<void> {
