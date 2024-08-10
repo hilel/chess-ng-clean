@@ -17,7 +17,8 @@
     "paths": {
       "@chess-ngc/client/data": ["libs/client/data/src/index.ts"],
       "@chess-ngc/data": ["libs/shared/data/src/index.ts"],
-      "@chess-ngc/shared/domain": ["libs/shared/domain/src/index.ts"]
+      "@chess-ngc/shared/domain": ["libs/shared/domain/src/index.ts"],
+      "@chess-ngc/ui": ["libs/client/ui/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
