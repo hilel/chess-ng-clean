@@ -5,7 +5,6 @@ import { GameEntity, GameRepo, GameStatus, MoveValue } from '@chess-ngc/shared/d
 
 @Injectable({ providedIn: 'root' })
 export class GameRepoMockClient implements GameRepo {
-    // implement the methods here
     getGames(): Observable<GameEntity[]> {
         return of([]);
     }

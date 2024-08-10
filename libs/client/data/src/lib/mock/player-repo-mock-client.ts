@@ -6,7 +6,6 @@ import { PlayerEntity } from 'libs/shared/domain/src/lib/entities/player-entity.
 
 @Injectable({ providedIn: 'root' })
 export class PlayerRepoMockClient implements PlayerRepo {
-    // implement the methods here
     getAllPlayers(): Observable<PlayerEntity[]> {
         return of([]);
     }
